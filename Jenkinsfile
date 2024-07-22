@@ -12,9 +12,6 @@ pipeline {
 			}
 		}
 		stage('Build') {
-      when {
-        branch "master"
-      }
 			steps {
 				sh 'echo "Building the code"'
 			}
