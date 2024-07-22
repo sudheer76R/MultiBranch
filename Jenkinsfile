@@ -17,6 +17,9 @@ pipeline {
 			}
 		}
 		stage('Deploy') {
+		    when {
+                branch 'prod'
+            }
 			steps {
 				echo 'Deploying into environment'
 			}
