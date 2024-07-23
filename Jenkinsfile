@@ -18,7 +18,7 @@ pipeline {
 		}
 		stage('Deploy') {
 		    when {
-                branch 'prod'
+                branch 'release'
             }
 			steps {
 				echo 'Deploying into environment'
